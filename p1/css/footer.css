@@ -1,0 +1,67 @@
+
+footer{
+    border: 3px solid red;
+    font-size: 80%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    text-align: center;
+    color: rgb(155, 143, 128);
+    padding: 1em;
+    width: 100%;
+}
+
+footer a{
+    font-size: 30px;
+    color: red; 
+}
+
+.saludo{
+    color: blueviolet;
+}
+#copy{
+    color: brown;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3em;
+
+}
+
+h1{
+    color: blue;
+    font-size: 60px;
+}
+
+h2{
+    position: sticky;
+    top: 0;
+    font-size: 30px;
+    color: aqua;
+    padding: 3px;
+    background: white;
+}
+
+aside{
+    width: 100px;
+    font-size: 80%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: navy;
+    text-align: center;
+    vertical-align: middle;
+    color: sienna;
+    padding: 1em;
+    height: 100%;
+}
+
+aside p{
+    font-size: 15px;
+}
+
