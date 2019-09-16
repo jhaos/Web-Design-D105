@@ -1,6 +1,34 @@
 
+/*
+Para declarar variables dentro del css usamos la siguiente estructura
+
+:root{
+    --var_name: contenido
+}
+
+Podemos meter colores dentro de las variables por ejemplo.
+*/
+
+/*@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
+*/
+
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('../fonts/alexbrush-regular-webfont.woff2') format('woff2'),
+         url('../fonts/alexbrush-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root{
+    --oscuro: brown;
+    --border_size: .3em;
+}
+
+
 footer{
-    border: 3px solid red;
+    border: var(--border_size) solid red;
     font-size: 80%;
     position: fixed;
     left: 0;
@@ -12,19 +40,13 @@ footer{
     width: 100%;
 }
 
-footer a{
-    font-size: 30px;
-    color: red; 
-}
 
-.saludo{
-    color: blueviolet;
-}
 #copy{
-    color: brown;
+    color: var(--oscuro);
 }
 
 body{
+    background-color: #6ACED9;
     margin: 0;
     padding: 0;
     margin-bottom: 3em;
@@ -32,15 +54,17 @@ body{
 }
 
 h1{
-    color: blue;
+    font-family: 'alex_brushregular', serif;
+    color: #737155;
     font-size: 60px;
+    background: var(--oscuro);
 }
 
 h2{
+    color:#737155;
     position: sticky;
     top: 0;
     font-size: 30px;
-    color: aqua;
     padding: 3px;
     background: white;
 }
@@ -65,3 +89,36 @@ aside p{
     font-size: 15px;
 }
 
+footer a{
+    padding: var(--border_size);
+    text-decoration: none;
+    border-bottom: 1px dotted red;
+}
+
+footer a:link {
+    color: yellow;
+    background: #FF33FF;
+}
+
+footer a:visited {
+    color: yellow;
+    background: #FF33FF;
+}
+
+footer a:focus {
+    color: yellow;
+    background: #FF33FF;
+
+}
+
+footer a:hover {
+    color: #FF33FF;
+    background: yellow;
+    transition: color 2s, background 2s; /*Esto es como un degradado.
+    la transicion entre el cambio de color que se produce*/
+}
+
+footer a:active {
+    color: yellow;
+    background: #FF33FF;
+}

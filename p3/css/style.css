@@ -1,0 +1,77 @@
+:root{
+    --ppad_size: 0.2em;
+    --color_text: rgb(0, 255, 200);
+    --back_color: rgb(240, 236, 170);
+    --icon_width_height: 50px;
+}
+
+body{
+    background: #F4F1BB;
+    margin: 0;
+    padding: 0;
+    color: #444444;
+    text-align: center;
+}
+
+h1{
+    position: sticky;
+    top: 0;
+    font-family: 'courier new', 'Segoe UI', Tahoma;
+    background: burlywood;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+}
+
+p{
+    text-align: justify;
+    font-family: Helvetica, serif;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: var(--ppad_size);
+}
+
+a{
+    text-decoration-style: solid;
+}
+
+a:link {
+    color: var(--color_text);
+    background: var(--back_color);
+}
+
+a:visited {
+    color: var(--color_text);
+    background: var(--back_color);
+}
+
+a:focus {
+    color: var(--color_text);
+    background: var(--back_color);
+}
+
+a:hover {
+    color: var(--back_color);
+    background: var(--color_text);
+    transition: color 1s, background 2s; /*Esto es como un degradado.
+    la transicion entre el cambio de color que se produce*/
+}
+
+a:active {
+    color: var(--color_text);
+    background: var(--back_color);
+}
+
+.Github{
+    border-radius: 50%;
+    width: var(--icon_width_height);
+    height: var(--icon_width_height);
+}
+
+.Linkedin{
+    width: var(--icon_width_height);
+    height: var(--icon_width_height);
+}
+
+#icons{
+    text-align: right;
+}
