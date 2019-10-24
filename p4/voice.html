@@ -7,77 +7,73 @@
         <meta name="author" content="Julio Reyes">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Voices In Erasmus</title>
-        
-        <!--Preguntar si esto esta bien asi-->
-        <link rel="stylesheet" type="text/css" href="css/v1.css" title="v1">
-        <link rel="alternate stylesheet" type="text/css" href="css/v2.css" title="v2"> 
-        <!--<link rel="stylesheet" href="css/footer.css">
-        <meta http-equiv="Default-Style" content="blue"> Default stylesheet
-        -->
+        <link rel="stylesheet" id="stylesheet" href="css/v1.css">
+        <script src="scripts/switch.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500i&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Voices In Erasmus</h1>
-        <nav>
-            <ul id="list_nav">
-                <li>
-                    <a href="voice.html">Home</a>
-                </li>
-                <li>
-                    <a href="#Picture_1">Picture 1</a>
-                </li>
-                <li>
-                    <a href="#Picture_2">Picture 2</a>
-                </li>
-                <li>
-                    <a href="#Picture_3">Picture 3</a>
-                </li>
-                <li>
-                    <a href="#Picture_4">Picture 4</a>
-                </li>
-                <li>
-                    <a href="#Picture_5">Picture 5</a>
-                </li>
-                <li>
-                    <a href="cambio?">Change CSS</a> <!--Preguntar si esto se hace asi-->
-                </li>
-            </ul>
-        </nav>
-        <article id="art_gen">   
-            <article id="Picture_1">
-                <h2 class="h2_pic">First image voice</h2>
-                <div class="text_pic">
-                    <img class="left_pic" src="img/foto.jpg" alt = "first_image">
-                    <img class="right_pic" src="img/foto.jpg" alt = "first_image">
-                    <p>Hiding my voice looking for another choice</p>
-                </div>
-                
+        <header>
+            <h1>Voices In Erasmus</h1>
+            <nav>
+                <ul id="list_nav">
+                    <li>
+                        <a href="voice.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#Picture_1">Picture 1</a>
+                    </li>
+                    <li>
+                        <a href="#Picture_2">Picture 2</a>
+                    </li>
+                    <li>
+                        <a href="#Picture_3">Picture 3</a>
+                    </li>
+                    <li>
+                        <a href="#Picture_4">Picture 4</a>
+                    </li>
+                    <li>
+                        <a href="#Picture_5">Picture 5</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article id="art_gen">
+                <button id="switchbutton" type="button" onclick="switchCSS('css/v1.css','css/v2.css'); return false;">Inside/Outside</button>
+                <article id="Picture_1">  
+                    <section class="text_pic">
+                        <img class="left_pic" src="img/foto.jpg" alt = "first_image">
+                        <img class="right_pic" src="img/foto.jpg" alt = "first_image">
+                        <p>Hiding my voice looking for another choice</p>
+                    </section>
+                    
+                </article>
+                <!--<article id="Picture_2">
+                    <h2>Second image voice</h2>
+                    <img class="left_pic" src="img/foto.jpg" alt = "second_image">
+                    <img class="right_pic" src="img/foto.jpg" alt = "second_image">
+                    <p>Text for first image</p>
+                </article>
+                <article id="Picture_3">
+                    <h2>Third image voice</h2>
+                    <img class="left_pic"  src="img/foto.jpg" alt = "third_image">
+                    <img class="right_pic" src="img/foto.jpg" alt = "third_image">
+                    <p>Text for first image</p>
+                </article>
+                <article id="Picture_4">
+                    <h2>Fourth image voice</h2>
+                    <img class="left_pic"  src="img/foto.jpg" alt = "fourth_image">
+                    <img class="right_pic" src="img/foto.jpg" alt = "fourth_image">
+                    <p>Text for first image</p>
+                </article>
+                <article id="Picture_5">
+                    <h2>Fith image voice</h2>
+                    <img class="left_pic"  src="img/foto.jpg" alt = "fith_image">
+                    <img class="right_pic" src="img/foto.jpg" alt = "fith_image">
+                    <p>Text for first image</p>
+                </article>-->
             </article>
-            <!--<article id="Picture_2">
-                <h2>Second image voice</h2>
-                <img class="left_pic" src="img/foto.jpg" alt = "second_image">
-                <img class="right_pic" src="img/foto.jpg" alt = "second_image">
-                <p>Text for first image</p>
-            </article>
-            <article id="Picture_3">
-                <h2>Third image voice</h2>
-                <img class="left_pic"  src="img/foto.jpg" alt = "third_image">
-                <img class="right_pic" src="img/foto.jpg" alt = "third_image">
-                <p>Text for first image</p>
-            </article>
-            <article id="Picture_4">
-                <h2>Fourth image voice</h2>
-                <img class="left_pic"  src="img/foto.jpg" alt = "fourth_image">
-                <img class="right_pic" src="img/foto.jpg" alt = "fourth_image">
-                <p>Text for first image</p>
-            </article>
-            <article id="Picture_5">
-                <h2>Fith image voice</h2>
-                <img class="left_pic"  src="img/foto.jpg" alt = "fith_image">
-                <img class="right_pic" src="img/foto.jpg" alt = "fith_image">
-                <p>Text for first image</p>
-            </article>-->
-        </article>
+        </main>
         <footer>
             <p>
                 <a href="https://www.linkedin.com/in/jjrhurtado/" id="Linkedin" target="_blank" rel="noopener noreferrer">

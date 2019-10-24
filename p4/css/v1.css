@@ -52,7 +52,6 @@ nav{
 
 #list_nav li{
     padding: 0.3vw;
-    
 }
 
 /*
@@ -65,7 +64,30 @@ nav{
     justify-content: center;
     flex-direction: column;
 }
+/*
+    Begin button style
+*/
+#art_gen button{
+    font-size: 3vw;
+    display: inline-block;
+    width: 15vw;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 7vh;
+    background-color: inherit;
+    border: none;
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+}
 
+button:hover{
+    text-shadow:  0 .7em .7em #000000 !important;
+}
+
+
+/*
+    End button style
+*/
 
 #Picture_1 h2{
     display: flex;
@@ -73,7 +95,8 @@ nav{
     text-align: center;
 }
 
-#Picture_1 div{
+
+#Picture_1 section{
     display: flex;
     flex-direction: row;
     justify-content: center;
