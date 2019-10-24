@@ -1,5 +1,5 @@
 body{
-    background: #423E3C;
+    background: rgb(65, 64, 64);
     margin: 0;
     padding: 0;
 }
@@ -7,7 +7,7 @@ body{
 h1{
     text-align: left;
     padding-top: 5vh;
-    background: rgb(107, 95, 89);
+    background: rgb(175, 175, 174);
     margin-top: 0.5vh;
     font-size: 3em;
 }
@@ -70,20 +70,19 @@ nav{
 #art_gen button{
     font-size: 3vw;
     display: inline-block;
-    width: 15vw;
+    width: 20vw;
     justify-content: center;
     align-self: center;
     margin-bottom: 7vh;
     background-color: inherit;
     border: none;
-    color: white;
-    font-family: 'Cormorant Garamond', serif;
+    color: rgb(182, 182, 182);
+    font-family: 'Parisienne', cursive;
 }
 
 button:hover{
     text-shadow:  0 .7em .7em #000000 !important;
 }
-
 
 /*
     End button style
