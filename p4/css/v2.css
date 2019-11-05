@@ -1,5 +1,5 @@
 body{
-    background: #423E3C;
+    background: rgb(126, 135, 143);
     margin: 0;
     padding: 0;
 }
@@ -7,58 +7,32 @@ body{
 h1{
     text-align: left;
     padding-top: 5vh;
-    background: rgb(107, 95, 89);
+    background: rgb(31, 30, 30);
+    color: #DFE9F2;
     margin-top: 0.5vh;
     font-size: 3em;
+    padding-top: 2vh;
+    margin-top: 0;
 }
 
 p{
-    color: rgb(158, 148, 148);
-    font-size: 3vw;
-    font-family: 'Cormorant Garamond', serif;
+    color: rgb(19, 20, 20);
+    font-size: 2.5vw;
+    font-family: 'Playfair Display', serif;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
-
 }
 
 .left_pic{
     width: 300px;
-    height: 300px;
-    
-}
-
-.right_pic{
-    width: 300px;
-    height: 300px;
+    height: 350px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 
-/*
-    Navigation style with flexbox.
-*/
-
-nav{
-    padding: 2vw;
-    display: flex;
-    justify-content: flex-end;  
+.right_pic{
+    width: 300px;
+    height: 350px;  
 }
-
-#list_nav{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-#list_nav li{
-    padding: 0.3vw;
-}
-
-/*
-    End navigation style
-    Article style with flexbox
-*/
 
 #art_gen{
     display: flex;
@@ -71,38 +45,31 @@ nav{
 #art_gen button{
     font-size: 3vw;
     display: inline-block;
-    width: 15vw;
+    width: 20vw;
     justify-content: center;
     align-self: center;
-    margin-bottom: 3vh;
+    margin-bottom: 7vh;
     background-color: inherit;
     border: none;
-    color: white;
-    font-family: 'Cormorant Garamond', serif;
-    
+    color: #13171C;
+    font-family: 'Parisienne', cursive;
+    text-decoration: underline;
+    text-decoration-color: rgb(51, 55, 58);
 }
 
 button:hover{
     text-shadow:  0 .7em .7em #000000 !important;
 }
 
-
 /*
     End button style
 */
-
-#Picture_1 h2{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
 
 #Picture_1 section{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-left: 20vw;
+    padding-left: 20vw; 
 }
 
 .text_pic p{
@@ -111,24 +78,56 @@ button:hover{
     align-items: center;
     margin-left: 2vw;
     margin-right: 2vw;
+    padding-right: 8vw;
+}
+
+#Picture_2 section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 21vw;
+    padding-top: 1vh; 
+}
+
+.text_pic_2 p{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 0vw;
+    margin-right: 2vw;
+    padding-left: 20vw;
+}
+
+#Picture_3 section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1vh;
+    padding-left: 35vw; 
+}
+
+.text_pic_3 p{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 3vw;
+    margin-right: 15vw;
+    padding-left: 0vw;
 }
 
 /*
     End article style with flexbox
 */
 
-img{
-    margin: 1px;
-}
 
 a{
-    color: black;
+    color: rgb(44, 43, 134);
 }
 
 a:link{}
 
 a:visited{
-    color: black;
+    color: rgb(44, 43, 134);
 }
 
 a:focus{}
@@ -136,3 +135,87 @@ a:focus{}
 a:hover{}
 
 a:active{}
+
+
+.logos{
+    padding-top: 5em;
+    width: 50px;
+    height: 50px;
+}
+
+/*
+    Starting resposivity
+*/
+
+@media only screen and (max-width: 768px) {
+    h1{
+        text-align: left;
+        padding-top: 3vh;
+        margin-top: 0.5vh;
+        font-size: 3em;
+        padding-top: 2vh;
+        margin-top: 0;
+        font-size: 5vw;
+    }
+
+    p{
+        text-shadow: none;
+    }
+
+    .left_pic{
+        width: 100px;
+        height: 150px;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
+    .right_pic{
+        width: 100px;
+        height: 150px;
+    }
+
+    .logos{
+        padding-top: 2vh;
+        width: 25px;
+        height: 25px;
+    }
+
+    #art_gen button{
+        font-size: 5vw;
+        display: inline-block;
+        width: 20vw;
+        justify-content: center;
+        align-self: center;
+        margin-bottom: 7vh;
+        background-color: inherit;
+        border: none;
+        color: rgb(182, 182, 182);
+        font-family: 'Parisienne', cursive;
+        text-decoration: underline;
+        text-decoration-color: rgb(182, 182, 182);
+    }
+
+    p{
+        margin-right: 2vw;
+    }
+
+    #Picture_2 section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-right: 21vw;
+        padding-top: 1vh; 
+    }
+    
+    .text_pic_2 p{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-right: 10vw;
+        padding-left: 20vw;
+    }
+
+    .text_pic_2 {
+        padding-left: 10vw;
+    }
+}
