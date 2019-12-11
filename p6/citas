@@ -1,0 +1,54 @@
+LABELS
+
+An information architect can ensure that contextual link labels are
+representational by asking herself, "What kind of information will the user
+expect to be taken to?" before creating and labeling a contextual link. pag 146
+
+
+In this case, if more representational navigation system labels had been used
+in the first place, they may have diminished the need to devote so much
+valuable main page real estate to scope notes. There are alternatives to scope
+notes that don't monopolize real estate, such as using JavaScript rollovers and
+other scripted mouseover effects to display the scope note, but these aren't an
+established convention.
+
+Designing effective labels is perhaps the most difficult aspect of information
+architecture. Language is simply too ambiguous for you to ever feel confident
+that you've perfected a label. There are always synonyms and homonyms to
+worry about, and different contexts influence our understanding of what a
+particular term means. But even labeling conventions are questionable: you
+absolutely cannot assume that the label "main page" will be correctly
+interpreted by 100 percent of your site's users. Your labels will never be
+perfect, and you can only hope that your efforts make a difference, as
+measuring label effectiveness is an extremely difficult undertaking.
+
+If we focus our sites on a more defined audience, we reduce the number of
+possible perspectives on what a label means. Sticking to fewer subject domains
+achieves more obvious and effective representation. A narrower business
+context means clearer goals for the site, its architecture, and therefore its
+labels.
+
+pagina 632
+
+
+NAVIGATION
+preguntas para ver si una navegacion es decente 
+
+1. Ignore the home page and jump directly into the middle of the site.
+2. For each random page, can you figure out where you are in relation to the
+rest of the site? What major section are you in? What is the parent page?
+3. Can you tell where the page will lead you next? Are the links descriptive
+enough to give you a clue what each is about? Are the links different
+enough to help you choose one over another, depending on what you want
+to do?
+
+movimientos laterales o verticales en la jerarquia
+
+From any branch of the hierarchy, it is possible and often
+desirable to allow users to move laterally into other branches, to move
+vertically from one level to a higher level in that same branch, or to move all
+the way back to the main page of the web site.
+
+7.6.4
+In its simplest form, a navigation bar is a distinct collection of hypertext links
+that connect a series of pages, enabling movement among them.

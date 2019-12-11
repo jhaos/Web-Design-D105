@@ -1,0 +1,245 @@
+body{
+    background: rgb(126, 135, 143);
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: left;
+    padding-top: 5vh;
+    background: rgb(31, 30, 30);
+    color: #DFE9F2;
+    margin-top: 0.5vh;
+    font-size: 3em;
+    padding-top: 2vh;
+    margin-top: 0;
+}
+
+p{
+    color: rgb(19, 20, 20);
+    font-size: 2.5vw;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+#last_pic{
+    height: 50vh;
+    width: 25vw;
+}
+
+.left_pic{
+    height: 50vh;
+    width: 25vw;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.right_pic{
+    height: 50vh;
+    width: 25vw;
+}
+
+#art_gen{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/*
+    Begin button style
+*/
+#art_gen button{
+    font-size: 3vw;
+    display: inline-block;
+    width: 20vw;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 7vh;
+    background-color: inherit;
+    border: none;
+    color: #13171C;
+    font-family: 'Parisienne', cursive;
+    text-decoration: underline;
+    text-decoration-color: rgb(51, 55, 58);
+}
+
+button:hover{
+    text-shadow:  0 .7em .7em #000000 !important;
+}
+
+/*
+    End button style
+*/
+
+#Picture_1{
+    position: relative;
+}
+
+#Picture_1 section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+.text_pic p{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    top: 39vh;
+    font-size: 2vw;
+    right: 25vw;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#Picture_2{
+    position: relative;
+}
+
+#Picture_2 section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.text_pic_2 p{
+    width: 24vw;
+    line-height: 1.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    top: 38vh;
+    font-size: 2vw;
+    left: 25vw;
+}
+
+#Picture_3{
+    position: relative;
+    right: 12.5vw;
+}
+
+#Picture_3 section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    left: 222vw;
+}
+
+.text_pic_3 p{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 2vw;
+    width: 25vw;
+    line-height: 2vw;
+    right: 12vw;
+    bottom: 18vh;
+    position: absolute;
+    margin-left: 1vw;
+}
+
+/*
+    End article style with flexbox
+*/
+
+
+a{
+    color: rgb(44, 43, 134);
+}
+
+a:link{}
+
+a:visited{
+    color: rgb(44, 43, 134);
+}
+
+a:focus{}
+
+a:hover{}
+
+a:active{}
+
+
+.logos{
+    padding-top: 5em;
+    width: 50px;
+    height: 50px;
+}
+
+/*
+    Starting resposivity
+*/
+
+@media only screen and (max-width: 768px) {
+    h1{
+        text-align: left;
+        padding-top: 3vh;
+        margin-top: 0.5vh;
+        font-size: 3em;
+        padding-top: 2vh;
+        margin-top: 0;
+        font-size: 5vw;
+    }
+
+    p{
+        text-shadow: none;
+    }
+
+    .left_pic{
+        width: 100px;
+        height: 150px;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
+    .right_pic{
+        width: 100px;
+        height: 150px;
+    }
+
+    .logos{
+        padding-top: 2vh;
+        width: 25px;
+        height: 25px;
+    }
+
+    #art_gen button{
+        font-size: 5vw;
+        display: inline-block;
+        width: 20vw;
+        justify-content: center;
+        align-self: center;
+        margin-bottom: 7vh;
+        background-color: inherit;
+        border: none;
+        color: rgb(182, 182, 182);
+        font-family: 'Parisienne', cursive;
+        text-decoration: underline;
+        text-decoration-color: rgb(182, 182, 182);
+    }
+
+    p{
+        margin-right: 2vw;
+    }
+
+    #Picture_2 section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-right: 21vw;
+        padding-top: 1vh; 
+    }
+    
+    .text_pic_2 p{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-right: 10vw;
+        padding-left: 20vw;
+    }
+
+    .text_pic_2 {
+        padding-left: 10vw;
+    }
+}
